@@ -1,0 +1,165 @@
+
+.orderTitle {
+	z-index: 50;
+	position: fixed;
+	top: 0rpx;
+	left: 0rpx;
+	width: 100%;
+	height: 104rpx;
+	background-color: #F2F2F2;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+}
+.orderTitleCh1 {
+	z-index: 40;
+	position: relative;
+	width: 25%;
+	height: 106rpx;
+	line-height: 106rpx;
+	text-align: center;
+	font-size: 32rpx;
+	color: black;
+	/* margin-top: 56px; */
+	/* font-weight: bold; */
+}
+.orderTitleCh2 {
+	z-index: 40;
+	position: relative;
+	width: 25%;
+	height: 106rpx;
+	line-height: 106rpx;
+	text-align: center;
+	font-size: 32rpx;
+	color: rgb(231, 103, 29);
+}
+.orderLine {
+	position: absolute;
+	width: 50%;
+	left: 25%;	
+	height: 8rpx;
+	background: rgb(231, 103, 29);
+	bottom: 14rpx;
+/* 	display: none;
+	animation-fill-mode: forwards; */
+}
+
+/* body信息   全部 */
+.AllBodyMsg {
+	width: 100%;
+	height: 100%;
+	overflow: scroll;
+	margin-top: 95rpx;
+}
+.AllBodyMsgCh {
+	width: 100%;
+	height: 340rpx;
+	margin-top: 10rpx;
+	border-top: 1rpx solid #808080;
+	border-bottom: 1rpx solid #808080;
+}
+.AllDanHao_Status {
+	width: 100%;
+	height: 58rpx;
+	border-bottom: 1rpx solid #808080;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+}
+.All_DanHao {
+	width: 400rpx;
+	height: 58rpx;
+	line-height: 58rpx;
+	margin-left: 2%;
+	font-size: 26rpx;
+}
+.All_Status {
+	width: 200rpx;
+	height: 58rpx;
+	margin-right: 2%;
+	line-height: 58rpx;
+	text-align: right;
+	font-size: 26rpx;
+	color: rgb(2, 95, 59);
+}
+.All_GotoKuTime {
+	width: 96%;
+	margin-left: 2%;
+	font-size: 26rpx;
+	height: 58rpx;
+	line-height: 58rpx;
+}
+.AllBodyShowMsgs {
+	position: relative;
+	width: 100%;
+	height: 220rpx;
+	border-top: 1rpx solid #808080;
+}
+.AllShowUser {
+	position: absolute;
+	top: 5rpx;
+	left: 2%;
+	width: 300rpx;
+	height: 40rpx;
+	line-height: 40rpx;
+	font-size: 30rpx;
+}
+.AllAddress {
+	position: absolute;
+	top: 5rpx;
+	right: 2%;
+	font-size: 26rpx;
+	text-align: right;
+}
+.AllTech_Address {
+	position: absolute;
+	left: 50%;
+	top: 47rpx;
+	-webkit-transform: translateX(-50%);
+	    -ms-transform: translateX(-50%);
+	        transform: translateX(-50%);
+	width: 600rpx;
+	height: 60rpx;
+	font-size: 30rpx;
+	line-height: 60rpx;
+	text-align: center;
+}
+.AllUser_Address_Imgs {
+	position: absolute;
+	left: 2%;
+	top: 100rpx;
+	width: 96%;
+	height: 60rpx;
+}
+.AllUser_Address_Imgs image,.AllUser_Tel_Imgs image {
+	position: absolute;
+	top: 10rpx;
+	width: 40rpx;
+	height: 40rpx;
+}
+.AllUser_Address,.AllUser_Tel {
+	position: absolute;
+	top:0rpx;
+	left: 60rpx;
+	font-size: 26rpx;
+	height: 60rpx;
+	line-height: 60rpx;
+}
+.AllUser_Tel_Imgs {
+	position: absolute;
+	top: 157rpx;
+	left: 2%;
+	width: 96%;
+}
+
+

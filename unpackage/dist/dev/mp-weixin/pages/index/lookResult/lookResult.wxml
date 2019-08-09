@@ -1,0 +1,1 @@
+<view><view class="Nav"><view class="NavCh">未完成</view><view class="NavCh">待确认</view><view class="NavCh">已完成</view></view><view class="Nav"><view class="NavCh1">50件</view><view class="NavCh1">30件</view><view class="NavCh1">100件</view></view><view class="Btns">确认</view></view>

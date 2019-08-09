@@ -1,0 +1,17 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/index/index",
+    "pages/index/exchangeIdentity/exchangeIdentity",
+    "pages/index/lookResult/lookResult",
+    "pages/technician/technician"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "极致生活",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#000"
+  },
+  "usingComponents": {}
+}

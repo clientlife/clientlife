@@ -1,0 +1,1 @@
+<view><view class="nowIdentity">当前身份: 生活管家</view><view class="exchange"><text>可切换身份</text><view class="choose"><picker mode="selector" range="{{list}}" value="{{index}}" data-event-opts="{{[['change',[['bindChange',['$event']]]]]}}" bindchange="__e"><view>{{list[index]}}</view></picker></view></view><view class="Btns">确认切换</view></view>

@@ -1,0 +1,82 @@
+<template>
+	<view>
+		<view class="nowIdentity">当前身份: 生活管家</view>
+		<view class="exchange">
+			<text>可切换身份</text>
+			<view class="choose">
+				<picker mode="selector" :range="list" :value="index" @change="bindChange">
+					<view>{{list[index]}}</view>
+				</picker>
+			</view>
+		</view>
+		<view class="Btns">确认切换</view>
+	</view>
+</template>
+
+<script>
+	export default {
+		data() {
+			return {
+				list:['技术员','生活管家','技术员','理发师'],
+				index:0
+			}
+		},
+		methods: {
+			bindChange(e) {
+				console.log(e)
+				this.index = e.target.value
+				console.log(this.index)
+			}
+		}
+	}
+</script>
+
+<style>
+	.nowIdentity {
+		margin-top: 80rpx;
+		margin-left: 4%;
+		width: 400rpx;
+		height: 40rpx;
+		line-height: 40rpx;
+		font-size: 30rpx;
+	}
+	.exchange {
+		width: 96%;
+		margin-left: 2%;
+		margin-top: 30rpx;
+		height: 60rpx;
+		position: relative;
+	}
+	.exchange text {
+		position: absolute;
+		top: 10rpx;
+		width: auto;
+		height: 40rpx;
+		font-size: 30rpx;
+	}
+	.choose {
+		position: absolute;
+		top: 10rpx;
+		left: 170rpx;
+		height: 40rpx;
+		width: 200rpx;
+		text-align: center;
+		line-height: 40rpx;
+		border: 1rpx solid #999999;
+		font-size: 30rpx;
+		color:#999999;
+	}
+	
+	.Btns {
+		position: fixed;
+		bottom: 60rpx;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 450rpx;
+		height: 55rpx;
+		line-height: 55rpx;
+		font-size: 28rpx;
+		text-align: center;
+		border: 1rpx solid #808080;
+	}
+</style>

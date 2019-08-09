@@ -1,20 +1,39 @@
 {
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
 		{
+            "path" : "pages/login/login",
+            "style" : {
+				"navigationBarTitleText": "极致生活"
+			}
+        },{
 			"path": "pages/index/index",
 			"style": {
-				"navigationBarTitleText": "uni-app"
+				"navigationBarTitleText": "极致生活"
 			}
 		}
-	    ,{
-            "path" : "pages/login/login",
-            "style" : {}
+        ,{
+            "path" : "pages/index/exchangeIdentity/exchangeIdentity",
+            "style" : {
+				"navigationBarTitleText": "切换身份"
+			}
+        }
+        ,{
+            "path" : "pages/index/lookResult/lookResult",
+            "style" : {
+				"navigationBarTitleText": "业绩查询"
+			}
+        }
+        ,{
+            "path" : "pages/technician/technician",
+            "style" : {
+				"navigationBarTitleText": "极致生活-技术员端"
+			}
         }
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
-		"navigationBarTitleText": "uni-app",
+		"navigationBarTitleText": "极致生活",
 		"navigationBarBackgroundColor": "#F8F8F8",
-		"backgroundColor": "#F8F8F8"
+		"backgroundColor": "#000"
 	}
 }
