@@ -48,7 +48,7 @@
 		</section>
 		<!-- 待处理 -->
 		<section class="AllBodyMsg" v-show="showWillWorkings">
-			<view class="AllBodyMsgCh" v-for="(item,index) in willList" :key="index">
+			<view class="AllBodyMsgCh" v-for="(item,index) in willList" :key="index" @click="gotoWaitingDo">
 				<view class="AllDanHao_Status">
 					<view class="All_DanHao">订单号：{{item.num}}</view>
 					<view class="All_Status">{{item.status}}</view>
@@ -71,7 +71,7 @@
 		</section>
 		<!-- 处理中 -->
 		<section class="AllBodyMsg" v-show="showWorkings">
-			<view class="AllBodyMsgCh" v-for="(item,index) in dingList" :key="index">
+			<view class="AllBodyMsgCh" v-for="(item,index) in dingList" :key="index" @click="goToworking">
 				<view class="AllDanHao_Status">
 					<view class="All_DanHao">订单号：{{item.num}}</view>
 					<view class="All_Status">{{item.status}}</view>
@@ -94,7 +94,7 @@
 		</section>
 		<!-- 补款中 -->
 		<section class="AllBodyMsg" v-show="showBuKuans">
-			<view class="AllBodyMsgCh" v-for="(item,index) in bukuanList" :key="index">
+			<view class="AllBodyMsgCh" v-for="(item,index) in bukuanList" :key="index" @click="goTofillMoney">
 				<view class="AllDanHao_Status">
 					<view class="All_DanHao">订单号：{{item.num}}</view>
 					<view class="All_Status">{{item.status}}</view>
@@ -117,7 +117,7 @@
 		</section>
 		<!-- 处理完成 -->
 		<section class="AllBodyMsg" v-show="showDones">
-			<view class="AllBodyMsgCh" v-for="(item,index) in doneList" :key="index">
+			<view class="AllBodyMsgCh" v-for="(item,index) in doneList" :key="index" @click="goToDone">
 				<view class="AllDanHao_Status">
 					<view class="All_DanHao">订单号：{{item.num}}</view>
 					<view class="All_Status">{{item.status}}</view>
@@ -277,6 +277,30 @@
 				this.showBuKuans = false
 				this.showDones = true
 			},
+			// 跳转待处理
+			gotoWaitingDo() {
+				uni.navigateTo({
+					url:'waitingDo/waitingDo'
+				})
+			},
+			// 跳转处理中
+			goToworking() {
+				uni.navigateTo({
+					url:'working/working'
+				})
+			},
+			// 跳转补款中
+			goTofillMoney() {
+				uni.navigateTo({
+					url:'fillMoney/fillMoney'
+				})
+			},
+			// 跳转处理完成
+			goToDone() {
+				uni.navigateTo({
+					url:'done/done'
+				})
+			}
 		}
 	}
 </script>

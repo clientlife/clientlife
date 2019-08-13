@@ -105,7 +105,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; //
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; //
 //
 //
 //
@@ -383,7 +383,32 @@ var _default =
       this.showWorkings = false;
       this.showBuKuans = false;
       this.showDones = true;
+    },
+    // 跳转待处理
+    gotoWaitingDo: function gotoWaitingDo() {
+      uni.navigateTo({
+        url: 'waitingDo/waitingDo' });
+
+    },
+    // 跳转处理中
+    goToworking: function goToworking() {
+      uni.navigateTo({
+        url: 'working/working' });
+
+    },
+    // 跳转补款中
+    goTofillMoney: function goTofillMoney() {
+      uni.navigateTo({
+        url: 'fillMoney/fillMoney' });
+
+    },
+    // 跳转处理完成
+    goToDone: function goToDone() {
+      uni.navigateTo({
+        url: 'done/done' });
+
     } } };exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ }),
 

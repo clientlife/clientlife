@@ -29,6 +29,36 @@
 				"navigationBarTitleText": "极致生活-技术员端"
 			}
         }
+        ,{
+            "path" : "pages/technician/waitingDo/waitingDo",
+            "style" : {
+				"navigationBarTitleText": "订单详情"
+			}
+        },
+		{
+            "path" : "pages/technician/waitingDo/working",
+            "style" : {
+				"navigationBarTitleText": "订单详情"
+			}
+        }
+        ,{
+            "path" : "pages/technician/working/working",
+            "style" : {
+				"navigationBarTitleText": "处理中"
+			}
+        }
+        ,{
+            "path" : "pages/technician/fillMoney/fillMoney",
+            "style" : {
+				"navigationBarTitleText": "补款中"
+			}
+        }
+        ,{
+            "path" : "pages/technician/done/done",
+            "style" : {
+				"navigationBarTitleText": "处理完成"
+			}
+        }
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",

@@ -4,7 +4,12 @@
     "pages/index/index",
     "pages/index/exchangeIdentity/exchangeIdentity",
     "pages/index/lookResult/lookResult",
-    "pages/technician/technician"
+    "pages/technician/technician",
+    "pages/technician/waitingDo/waitingDo",
+    "pages/technician/waitingDo/working",
+    "pages/technician/working/working",
+    "pages/technician/fillMoney/fillMoney",
+    "pages/technician/done/done"
   ],
   "subPackages": [],
   "window": {
